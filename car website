@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Lets buy cars</h1>
+
+<p>My first paragraph.</p>
+
+<h2>HTML Image</h2>
+<img src="car1.jpg"  width="500" height="333">
+
+
+</body>
+</html>
