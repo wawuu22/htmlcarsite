@@ -6,25 +6,25 @@
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Parts')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'How to')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Links')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'Vehicles')">Vehicels</button>
+  <button class="tablinks" onclick="openCity(event, 'Shopping')">Shopping</button>
+  <button class="tablinks" onclick="openCity(event, 'Fixing')">Fixing</button>
 </div>
 
 <!-- Tab content -->
-<div id="Parts" class="tabcontent">
+<div id="Vehlices" class="tabcontent">
   <h3>Parts</h3>
-  <p>London is the capital city of England.</p>
+  <p>We have SUVs, Trucks, Cars.</p>
 </div>
 
-<div id="How to" class="tabcontent">
+<div id="Shopping" class="tabcontent">
   <h3>How to</h3>
-  <p>Paris is the capital of France.</p>
+  <p>Shop for cheap and used vehicles.</p>
 </div>
 
-<div id="Links" class="tabcontent">
+<div id="Fixing" class="tabcontent">
   <h3>Links</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <p>Here we will assist on repairs and maintence on your new to you vehicles.</p>
 </div>
 
 <p>My first paragraph.</p>
