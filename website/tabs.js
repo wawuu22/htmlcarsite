@@ -34,4 +34,3 @@ function calcost(){
   var costper20 = (consumed * costper).toFixed(2);
   document.getElementById('consumption').innerHTML = "Consumption is "+consumed+" gal/20 mi ( $ " + costper20 + " / 20 mi ) <br><br>Total Fuel cost = $ " + (fuel*costper).toFixed(2);
 }
-
