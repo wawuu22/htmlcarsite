@@ -1,5 +1,3 @@
-
-
 function openPage(pageName, elmnt, color) {
   
 // Hide all elements with class="tabcontent" by default */
@@ -27,3 +25,22 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+/*
+Fuel Consumption Calculator
+Inputs:
+  Litres consumed
+  distance driven
+  fuel cost per litre
+Output:
+  litres used per 100km
+*/
+function calcost(){
+  var distance = document.getElementById('distance').value;
+  var fuel = document.getElementById('fuel').value;
+  var costper = document.getElementById('costper').value;
+  var consumed =  (fuel / (distance/20)).toFixed(2);
+  var costper20 = (consumed * costper).toFixed(2);
+  document.getElementById('consumption').innerHTML = "Consumption is "+consumed+" gal/20 mi ( $ " + costper20 + " / 20 mi ) <br><br>Total Fuel cost = $ " + (fuel*costper).toFixed(2);
+}
+
