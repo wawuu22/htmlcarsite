@@ -1,63 +1,60 @@
 
-<link rel="stylesheet" href="tabs2.css">                                <!-- Links to external CSS file into html file -->
+
+<link rel="stylesheet" href="tabs.css">
 
 
-<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>  <!-- This allows us to make multiple tabs with different coloring -->
-<button class="tablink" onclick="openPage('Vehicles', this, 'green')">Vehicles</button>           <!--  and different title names for each different tab page -->
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Vehicles', this, 'green')">Vehicles</button>
 <button class="tablink" onclick="openPage('Maintenance', this, 'blue')">Maintenance</button>
 <button class="tablink" onclick="openPage('Economy', this, 'orange')">Fuel Economy </button>
 
 <!-- code above controls the tab titles and colors buttons -->
 
-<div id="Home" class="tabcontent">      <!-- use div to seperate into sections -->
-  <h3>Home</h3>					                <!-- Header -->
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>					<!-- Header -->
   <p>Lets buy Cars!</p>			<!-- Paragraph -->
-  
-  <p>Looking for a car that's right for you? Well look no futher!</p>
-  
-  <p>We have a great selection of vehicles that will suit to any of your likings from off road to urban settings.</p>
-  
-  <p>We also have tools to help maintain your new to you vehicles with no extra charge!</p>
-  
-  <p>Lets get you into a new car today!</p>
-  
-  <p>Any questions or concerns please reach out to our help center</p>
-  <p>Phone: 999-999-9999 </p>
-  <p>Email: Buycars2022@gmail.com</p>
 
-  
-<div id="Vehicles" class="tabcontent">    <!-- id specifies which tab it corresponds to -->
+
+</div>
+
+<div id="Vehicles" class="tabcontent">
   <h3>Vehicles</h3>
   <p>Trucks!</p>
-  <img src="Ford_.jpg" alt="Ford_" width="200" height="100">
   <p>SUVs! </p>
   
-  <img src="Bronco.jpg" alt="Bronco_" width="200" height="100">   <!-- This allows the image Bronco_ to be added to the website along with the sizing of our choosing 
-                                  for the width and height -->
+  <img src="Bronco.jpg" alt="Bronco_" width="600" height="400">   <!-- This allows the image Bronco_ to be added to the website along with the sizing of our choosing 
+                                                                          for the width and height -->
   <p>Cars!</p> 
-    <img src="Ford_fusion.jpg" alt="Ford_fusion" width="200" height="100">
+
 </div>
-  
-  
+
 <div id="Maintenance" class="tabcontent">
   <h3>Maintenance</h3>
   <p>Here we will show you how to fix your car with no extra payemnts!</p>
   <p>This <a href="https://www.youtube.com/watch?v=5Awa6MLGFXc">youtube </a> tutorial will show you 
-    how to change your oil on the 2021 Ford Bronco.                       <!-- href (hypertext reference) creates a hyperlink on the webpage allowing the user -->
-  </p>                                                                    <!-- to open and be sent to said link -->
+    how to change your oil on the 2021 Ford Bronco. 
+  </p>
 
-
-  
 </div>
 
 <div id="Economy" class="tabcontent">
   <h3>Fuel Economy </h3>
   <p>Calculations on your fuel Consumption.</p>
-</div>
+  <h1>Fuel Consumption Calculator</h1>
+  <p>Distance (mi.):<input id="distance" type="number" min="150" max="1000000" onchange="calcost()"></p> <!-- variable input for distance -->
+<p>Fuel Consumed (gal):<input id="fuel" type="number" min="10" max="10000000" step="1" onchange="calcost()"></p> <!-- variable input for fuel -->
+<p>Cost per gal: $ <input id="costper" type="number" min="2.49" max="10" step="0.01" value="2.49" onchange="calcost()"></p> <!-- variable input for cost of fuel -->
+<h2 id="consumption"></h2>  <!-- Result will be shown as header here -->
+
+<script src="D:\Website\tabs.js"></script>
 
 
 
-<script src="C:\Users\Raul Jimenez Jr\Documents\website\tabs.js"></script>      <!-- links the external javascript file into the html source -->
+
+
+
+
+
 
 
 
