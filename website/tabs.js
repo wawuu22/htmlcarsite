@@ -26,15 +26,6 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-/*
-Fuel Consumption Calculator
-Inputs:
-  Litres consumed
-  distance driven
-  fuel cost per litre
-Output:
-  litres used per 100km
-*/
 function calcost(){
   var distance = document.getElementById('distance').value;
   var fuel = document.getElementById('fuel').value;
