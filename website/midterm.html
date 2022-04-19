@@ -1,0 +1,66 @@
+
+<link rel="stylesheet" href="midterm.css">                  <!-- Links the CSS to the html file -->
+
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>  <!--The 'id' controls what tab opens first when on the website-->
+<button class="tablink" onclick="openPage('Vehicles', this, 'green')">Vehicles</button>
+<button class="tablink" onclick="openPage('Maintenance', this, 'blue')">Maintenance</button>
+<button class="tablink" onclick="openPage('Economy', this, 'orange')">Fuel Economy </button>
+
+<!-- code above controls the tab titles and colors buttons -->
+
+<div id="Home" class="tabcontent">
+  <h1>Home</h1>					<!-- Header -->
+  <p>Lets buy Cars!</p>			<!-- Paragraph -->
+  <p>Welcome Buyers! Widow Shoppers! Companies!</p>                                            <!--What the users will see when on the 'Home' Page -->
+  <p>Looking for a new car? Or a new to you car? Look no further!</p>
+  <p>We offer a great selection of Vehicles and are sure to have the perfect car for you! </p>
+  <p>For questions or concerns please reach our help desk</p>
+  <p>Phone Number: (999)999-9999</p>
+  <p>Email:BuyOurCars@gmail.com</p>
+  <p>Thank you and hope to see you soon.</p>
+</div>
+
+<div id="Vehicles" class="tabcontent">      <!-- Under the 'Vehicles' tab we have some images showing the vehicles along with the dimensions-->
+  <h1>Vehicles</h1>
+  <p>Trucks!</p>
+
+    <img src="Ford_.jpg" alt="Ford_" width="150" height="100">          <!-- line to the left controls the dimensions -->
+    <p>Here above we have a 2018 Ford F-150 great for carrying materials needed for any job! Ability to drive on and off roads and one of our best 
+        sellers for work men. </p>
+
+  <p>SUVs! </p>
+  
+  <img src="Bronco.jpg" alt="Bronco_" width="150" height="100">   <!-- This allows the image Bronco_ to be added to the website along with the sizing of our choosing 
+                                                                          for the width and height -->
+ <p>This 2021 Ford Bronco says luxury with its beautiful interior and the outside saying let's go off road! You get the best of both workds!</p>
+                                                                          <p>Cars!</p> 
+
+
+  <img src="Ford_fusion.jpg" alt="Ford_fusion" width="150" height="100">
+    <p>This Ford fusion is great on gas mileage and great for your job communts or a simple drive to the grovery store. </p>
+</div>
+
+<div id="Maintenance" class="tabcontent">
+  <h1>Maintenance</h1>
+  <p>Here we will show you how to fix your car with no extra payemnts!</p>
+  <p>This <a href="https://www.youtube.com/watch?v=5Awa6MLGFXc">youtube </a> tutorial will show you 
+    how to change your oil on the 2021 Ford Bronco. 
+  </p>
+
+  <p>This <a href="https://youtu.be/b4qq3RrBWV4">video</a> will show how to change out a bad headlight on your ford truck.</p>
+
+  <p>This  <a href="https://youtu.be/IyZVWAHQI1c">attachment</a> will elaborate in a detailed fashion on how to adjust your ford fusions tired and how to change them with correct plavement 
+    under the vehicle while next to everyday traffic for saftey reasons.</p>
+
+
+</div>
+
+<div id="Economy" class="tabcontent">                   <!-- 'Econcomy' tab will consist of a calulator consisting of gas, money, and mileage-->
+  <h1>Fuel Consumption Calculator</h1>
+  <p>Distance (mi.):<input id="distance" type="number" min="150" max="1000000" onchange="calcost()"></p> <!-- variable input for distance -->
+<p>Fuel Consumed (gal):<input id="fuel" type="number" min="10" max="10000000" step="1" onchange="calcost()"></p> <!-- variable input for fuel -->
+<p>Cost per gal: $ <input id="costper" type="number" min="2.49" max="10" step="0.01" value="2.49" onchange="calcost()"></p> <!-- variable input for cost of fuel -->
+<h2 id="consumption"></h2>  <!-- Result will be shown as header here -->
+
+
+<script src="midterm.js"></script>          <!-- Links the javascript to the html format -->
