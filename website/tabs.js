@@ -27,10 +27,10 @@ function openPage(pageName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 
 function calcost(){
-  var distance = document.getElementById('distance').value;
-  var fuel = document.getElementById('fuel').value;
-  var costper = document.getElementById('costper').value;
-  var consumed =  (fuel / (distance/20)).toFixed(2);
+  var distance = document.getElementById('distance').value; //Document makes a new element, get element in the object
+  var fuel = document.getElementById('fuel').value;         // ^^^
+  var costper = document.getElementById('costper').value;   // ^^^
+  var consumed =  (fuel / (distance/20)).toFixed(2);        //Returns a string representing a number in fixed-point notation.   
   var costper20 = (consumed * costper).toFixed(2);
   document.getElementById('consumption').innerHTML = "Consumption is "+consumed+" gal/20 mi ( $ " + costper20 + " / 20 mi ) <br><br>Total Fuel cost = $ " + (fuel*costper).toFixed(2);
-}
+}                                   //interacts with interface
